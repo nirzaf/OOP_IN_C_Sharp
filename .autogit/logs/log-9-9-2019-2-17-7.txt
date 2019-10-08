@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Wed Oct 09 2019 02:17:07 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* SalesMan.cs
+
+
+Created files:
+* .autogit/logs/log-9-9-2019-2-15-21.txt
+
+
+Deleted files:
+
+
+Renamed files:
