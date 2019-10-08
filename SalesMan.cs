@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OOP_IN_C_Sharp
+public abstract class SalesMan
 {
-    class SalesMan
-    {
-    }
+
 }
+
