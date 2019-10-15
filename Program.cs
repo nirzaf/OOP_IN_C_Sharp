@@ -2,6 +2,41 @@
 
 namespace OOP_IN_C_Sharp
 {
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Customer c = new Owner();
+            c.Print();
+
+            BaseClass bc = new DerivedClass();
+            bc.Print();
+
+            Employee[] employees = new Employee[4];
+            employees[0] = new Employee();
+            employees[1] = new PartTime();
+            employees[2] = new FullTime();
+            employees[3] = new Temp();
+            foreach (var emp in employees)
+            {
+                emp.FullName();
+            }
+        }
+    }
+
+    //Abstraction
+    public abstract class Customer
+    {
+        public abstract void Print();
+    }
+
+    public class Owner : Customer
+    {
+        public override void Print()
+        {
+            Console.WriteLine("Print Abstract Method");
+        }
+    }
     // Method Hiding 
     public class BaseClass
     {
@@ -51,25 +86,6 @@ namespace OOP_IN_C_Sharp
         public override void FullName()
         {
             Console.WriteLine(FirstName + " " + LastName + " Temporary Employee");
-        }
-    }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            BaseClass bc = new DerivedClass();
-            bc.Print();
-
-            Employee[] employees = new Employee[4];
-            employees[0] = new Employee();
-            employees[1] = new PartTime();
-            employees[2] = new FullTime();
-            employees[3] = new Temp();
-            foreach (var emp in employees)
-            {
-                emp.FullName();
-            }
         }
     }
 }
