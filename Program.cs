@@ -6,7 +6,7 @@ namespace OOP_IN_C_Sharp
     {
         public string FirstName = "First Name ";
         public string LastName = "Last Name ";
-        public void FullName()
+        public virtual void FullName()
         {
             Console.WriteLine(FirstName +" "+ LastName);
         }
@@ -14,25 +14,25 @@ namespace OOP_IN_C_Sharp
 
     public class FullTime : Employee
     {
-        public void FullName()
+        public override void FullName()
         {
-            Console.WriteLine(FirstName + " " + LastName);
+            Console.WriteLine(FirstName + " " + LastName + " FullTime Employee");
         }
     }
 
     public class PartTime : Employee
     {
-        public void FullName()
+        public override void FullName()
         {
-            Console.WriteLine(FirstName + " " + LastName);
+            Console.WriteLine(FirstName + " " + LastName + " Part Time Employee");
         }
     }
 
     public class Temp : Employee
     {
-        public void FullName()
+        public override void FullName()
         {
-            Console.WriteLine(FirstName + " " + LastName);
+            Console.WriteLine(FirstName + " " + LastName + " Temporary Employee");
         }
     }
 
