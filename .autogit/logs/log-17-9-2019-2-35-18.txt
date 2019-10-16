@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Thu Oct 17 2019 02:35:18 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-17-9-2019-2-34-43.txt
+
+
+Deleted files:
+
+
+Renamed files:
